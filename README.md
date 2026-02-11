@@ -3,6 +3,6 @@
 Este repositório contém meus avanços práticos no aprendizado de Python
 
 ### 🚀 Projetos Atuais:
-* **Nenhum atualmente.**
+* **blocking_attempts.py;**
 
 ----------------------------------------------------------------------
