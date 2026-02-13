@@ -1,19 +1,15 @@
 
-senha = "pato123"
-tolerancia = 1
-acessado = False
+def realizar_login (senha_correta, max_tentativa):
+    for i in range(1, max_tentativa + 1):
+        chute = input(f"Tentativa {i}/{max_tentativa}: ")
 
-while tolerancia <= 5 and not acessado:
+        if chute == senha_correta:
+            return True
+    return False 
 
-    tentativa = input("Digite a senha corretamente:")
+sucesso = realizar_login("raposa123", 5)
 
-    if tentativa == senha:
-        print("Senha validada.")
-        acessado = True
-    else: 
-        print("Senha incorreta.")
-        tolerancia += 1
-    
-
-if not acessado:
- print("Tentativas excessivas. Entrada bloqueada.")
+if sucesso:
+    print("Acesso concedido!")
+else:
+    print("Acesso bloqueado!")
